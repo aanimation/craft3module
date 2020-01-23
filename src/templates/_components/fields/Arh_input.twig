@@ -1,0 +1,24 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * arhammodule module for Craft CMS 3.x
+ *
+ * Arh Field Input
+ *
+ * @author    aanimation
+ * @copyright Copyright (c) 2020 aanimation
+ * @link      https://github.com/aanimation
+ * @package   Arhammodule
+ * @since     1.0.1
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+{{ forms.textField({
+        label: 'Some Field',
+        instructions: 'Enter some text here.',
+        id: name,
+        name: name,
+        value: value})
+}}

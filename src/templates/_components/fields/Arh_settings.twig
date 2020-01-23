@@ -1,0 +1,26 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * arhammodule module for Craft CMS
+ *
+ * Arh Field Settings
+ *
+ * @author    aanimation
+ * @copyright Copyright (c) 2020 aanimation
+ * @link      https://github.com/aanimation
+ * @package   Arhammodule
+ * @since     1.0.1
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+{% do view.registerAssetBundle("modules\\arhammodule\\assetbundles\\arhammodule\\ArhammoduleAsset") %}
+
+{{ forms.textField({
+    label: 'Some Attribute',
+    instructions: 'Enter some attribute here.',
+    id: 'someAttribute',
+    name: 'someAttribute',
+    value: field['someAttribute']})
+}}
